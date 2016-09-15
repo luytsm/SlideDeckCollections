@@ -3,12 +3,12 @@
   <head>
     <title>{{ page.title }}</title>
     <meta charset="utf-8"/>
-    <link rel="stylesheet" href="/reveal.js/css/reveal.css">
-    <link rel="stylesheet" href="/reveal.js/css/theme/{{ page.reveal.theme }}.css">
-    <link rel="stylesheet" href="/reveal.js/lib/css/zenburn.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/css/theme/{{ page.reveal.theme }}.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/lib/css/zenburn.css">
     <script>
       // If the query includes 'print-pdf' we'll use the PDF print sheet
-      document.write( '<link rel="stylesheet" href="/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+      document.write( '<link rel="stylesheet" href="/{{ site.baseurl }}/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
   </head>
   <body>
@@ -22,8 +22,8 @@
       <div class="progress"><span></span></div>
     </div>
 
-    <script src="/reveal.js/lib/js/head.min.js"></script>
-    <script src="/reveal.js/js/reveal.js"></script>
+    <script src="{{ site.baseurl }}/reveal.js/lib/js/head.min.js"></script>
+    <script src="{{ site.baseurl }}/reveal.js/js/reveal.js"></script>
 
     <script>
 
@@ -59,10 +59,10 @@
 
       // Optional libraries used to extend on reveal.js
       dependencies: [
-        { src: '/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-          { src: '/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-        { src: '/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
-        { src: '/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }
+        { src: '{{ site.baseurl }}/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '{{ site.baseurl }}/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: '{{ site.baseurl }}/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+        { src: '{{ site.baseurl }}/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } }
       ]
 
       });
