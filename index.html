@@ -9,7 +9,7 @@ title: Slide Deck Collections
   <ul>
     {% for slide in site.slides %}
     <li>
-      <a class="slide-entry" href="{{ site.base | append: slide.url }}">{{ slide.title }}</a>
+      <a class="slide-entry" href="{{ site.baseurl | append: slide.url }}">{{ slide.title }}</a>
       <small>{{ slide.description }}</small>
     </li>
     {% endfor %}
