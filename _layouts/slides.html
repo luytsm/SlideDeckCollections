@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/lib/css/zenburn.css">
     <script>
       // If the query includes 'print-pdf' we'll use the PDF print sheet
-      document.write( '<link rel="stylesheet" href="/{{ site.baseurl }}/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+      document.write( '<link rel="stylesheet" href="{{ site.baseurl }}/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
     </script>
   </head>
   <body>
