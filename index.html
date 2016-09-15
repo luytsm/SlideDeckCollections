@@ -1,0 +1,17 @@
+---
+layout: default
+title: Slide Deck Collections
+---
+
+<div id="home">
+  <h1>Slide Deck Collections</h1>
+  <h2>Landing page for Slide Deck Collections</h2>
+  <ul>
+    {% for slide in site.slides %}
+    <li>
+      <a class="slide-entry" href="{{ slide.url }}">{{ slide.title }}</a>
+      <small>{{ slide.description }}</small>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
