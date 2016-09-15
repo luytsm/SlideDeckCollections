@@ -2,6 +2,8 @@ name: jekyll-reveal
 markdown: redcarpet
 highlighter: pygments
 
+baseurl: /SlideDeckCollections
+
 collections:
   slides:
     output: true
