@@ -1,0 +1,132 @@
+---
+title: "Labo 1: Blinky"
+description: "Beginnen ontwikkelen op het arduino platform"
+reveal:
+---
+<section>
+  <h1>{{ page.title }}</h1>
+</section>
+<section>
+  <h2>Installeren Arduino ontwikkelingsomgeving</h2>
+  <ul>
+    <li>Arduino IDE</li>
+    <li>Visual Studio Plugin</li>
+    <li>PlatformIO</li>
+  </ul>
+</section>
+<section>
+  <h2>Arduino IDE</h2>
+  <ul>
+    <li>Simpelste oplossing</li>
+    <li>Barebone</li>
+    <li>Meeste tutorials zijn hier op gebaseerd.</li>
+    <li><a href="https://www.arduino.cc/en/Main/Software">Download here</a></li>
+  </ul>
+  <img src="img/arduino_ide.png" style="float: right; widthi: 35%;"></img>
+</section>
+<section>
+  <h2>Visual Studio plugin</h2>
+  <ul style="float: left;">
+    <li>Gekende omgeving</li>
+    <li>Windows Only</li>
+    <li>Betere code highlighting</li>
+    <li>Betere werking met libraries werken</li>
+    <li><a href="http://www.visualmicro.com/">Download here</a></li>
+  </ul>
+  <img src="img/vsm.png" style="float: right; width: 45%;"></img>
+
+</section>
+<section>
+  <h2>PlatformIO</h2>
+  <ul style="float: left;">
+    <li>CLI Based</li>
+    <li>Combinatie met jouw favorite text editor</li>
+    <li>Ondersteund meerdere embedded platformen</li>
+    <li>Steile leercurve</li>
+    <li><a href="http://platformio.org/">Download here</a></li>
+  </ul>
+  <img src="img/platformio.png" style="float: right; width: 35%;"></img>
+</section>
+<section>
+  <h1>Choose Your Weapon</h1>
+</section>
+<section>
+  <h1>Sketches</h1>
+</section>
+<section>
+  <h2>Sketches</h2>
+  <ul>
+    <li>Sketches = Arduino programma's</li>
+    <li>.ino extensie</li>
+    <li>2 grote componenten</li>
+    <ul>
+      <li><pre><code class="cpp" style="display: inline;">void setup();</code></pre></li>
+        <li><pre><code class="cpp" style="display: inline;">void loop();</code></pre></li>
+    </ul>
+    <li><a href="https://www.arduino.cc/en/tutorial/sketch">Documentatie</a></li>
+  </ul>
+</section>
+<section>
+  <h2>Blink Sketch</h2>
+  <img src="img/blinky_schematic.png" alt="">
+</section>
+<section>
+  <h2>Blink Sketch</h2>
+  <pre><code class="cpp">
+  void setup() {
+  pinMode(LED_BUILTIN, OUTPUT);
+
+
+  void loop() {
+    digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+    delay(1000);                       // wait for a second
+    digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+    delay(1000);                       // wait for a second
+  }
+  </code></pre>
+</section>
+<section>
+  <h2>Blink Sketch</h2>
+  <ul>
+    <li>setup</li>
+    <ul>
+      <li>pinMode</li>
+      <li>LED_BUILTIN + OUTPUT</li>
+    </ul>
+    <li>loop</li>
+    <ul>
+      <li>digitalWrite</li>
+      <li>HIGH + LOW</li>
+      <li>delay()</li>
+    </ul>
+  </ul>
+</section>
+<section>
+  <h2>Code Uploaden</h2>
+  <ul>
+    <li>Example sketch openen</br>
+      <i><b>File > Examples > 01. Basic > Blink</i></b></li>
+    <li>COM Poort selecteren</br>
+      <i><b>Tools > Port > COMX</i></b></li>
+    <li>Board selecteren</br>
+      <i><b>Tools > Board > Arduino Nano / Duemilanove / Uno</i></b></li>
+  </ul>
+</section>
+<section>
+  <h2>Oefening</h2>
+  <ul>
+    <li>Lees volgende documentatie items:</li>
+    <ul>
+      <li><a href="https://www.arduino.cc/en/Tutorial/Blink">Blink Tutorial</a></li>
+      <li><a href="https://www.arduino.cc/en/Reference/PinMode">pinMode()</a></li>
+      <li><a href="https://www.arduino.cc/en/Reference/DigitalWrite">digitalWrite()</a></li>
+    </ul>
+    <li>Laad blink in op de Arduino</li>
+    <li>Maak de volgende aanpassing</li>
+    <ul>
+      <li>Programmeer SOS</li>
+      <li>Laad een led branden op een andere pin</li>
+      <li>Laat meerdere leds tegelijk branden</li>
+    </ul>
+  </ul>
+</section>
